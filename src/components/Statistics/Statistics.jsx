@@ -5,7 +5,7 @@ import css from './Statistics.module.css';
 export const Statistics = ({ title, stats }) => {
   return (
     <section className={css.statistics}>
-      {{ title } && <h2 className={css.title}>{title.toUpperCase()}</h2>}
+      {title && <h2 className={css.title}>{title.toUpperCase()}</h2>}
       <ul className={css.stat_list}>
         {stats.map(stat => (
           <StatsList
